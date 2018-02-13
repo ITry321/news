@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <style>
+        header {
+            width: 400hv;
+            background-color: coral;
+            color: aliceblue;
+
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+
+        }
+
+        .btn {
+            align-content: center;
+          
+        }
+      
+
+    </style>
+</head>
+
+<body ng-controller="myCtrl as ctrl">
+    <div class="container-fluid">
+        <header>
+            <div class="row">
+                <div class="col-12 {{ctrl.newStyle.header}}">
+                    <h1>My Angular page</h1>
+                    <h3>You can change style</h3>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-success" ng-click="ctrl.style1()">Style1</button>
+                        <button type="button" class="btn btn-success" ng-click="ctrl.style2()">Style2</button>
+                        <button type="button" class="btn btn-success" ng-click="ctrl.style3()">Style3</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-lg-4 {{ctrl.newStyle.aside}}">
+                <h2>Column 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dicta ducimus consequuntur voluptatibus tempore placeat, non nostrum, repudiandae vero possimus nihil totam veritatis enim ipsam architecto perferendis, aut illum aperiam.</p>
+
+            </div>
+
+
+            <div class="col-lg-4 {{ctrl.newStyle.main}}">
+                <h2>Column 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dicta ducimus consequuntur voluptatibus tempore placeat, non nostrum, repudiandae vero possimus nihil totam veritatis enim ipsam architecto perferendis, aut illum aperiam.</p>
+
+            </div>
+
+            <div class="col-lg-4 {{ctrl.newStyle.aside}}">
+                <h2>Column 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dicta ducimus consequuntur voluptatibus tempore placeat, non nostrum, repudiandae vero possimus nihil totam veritatis enim ipsam architecto perferendis, aut illum aperiam.</p>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
